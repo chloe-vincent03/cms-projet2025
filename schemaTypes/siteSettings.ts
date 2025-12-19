@@ -6,7 +6,8 @@ export default defineType({
   type: 'document',
   groups : [
     {name: 'header', title :'header'},
-    {name: 'seo', title: 'seo'}
+    {name: 'seo', title: 'seo'},
+    {name: 'footer', title: 'footer'}
   ],
   fields: [
     defineField({
@@ -26,6 +27,12 @@ export default defineType({
       title: 'logo',
       type: 'image',
       group: 'header',
+    }),
+        defineField({
+      name: 'logofooter',
+      title: 'logo-footer',
+      type: 'image',
+      group: 'footer',
     }),
     defineField({
         name: 'navigation',
